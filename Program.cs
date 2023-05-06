@@ -9,8 +9,8 @@ num = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Avaliar se é múltiplo de: ");
 mult = int.Parse(Console.ReadLine()!);
 
-resultado = mult * mult;
-if (resultado == num)
+resultado = num / mult;
+if (num % mult == 0)
 {
     Console.WriteLine($"{num} é múltiplo de {mult}");
 }
